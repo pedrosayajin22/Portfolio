@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+
+:root{
+    --Width:100%;
+    --Max-width:1280px;
+    --Primary-color:white;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: var(--Width);
+    background-color: aqua;
+    padding: 30px 2%;
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 50px;
+}
+nav ul li{
+    padding: 0 10px;
+}
+
+section.banner .container{
+    height: 100vh;
+    width: var(--Width);
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.WhoIam{
+    padding: 50px 2%;
+    background-color: aquamarine;
+}
+section.tecnologies{
+    padding: 50px 2%;
+    background-color: chartreuse;
+}
+section.projects{
+    padding: 50px 2%;
+    background-color: crimson;
+}
