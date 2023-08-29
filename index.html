@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <title>Pedro Terra | Portfolio</title>
@@ -16,13 +17,30 @@
 <body>
     <header>
         <nav>
-            <h2>Pedro Terra <span><i class="fa-solid fa-bolt"></i></span></h2>
-            <ul>
-                <li>Home</li>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Knowledge</li>
-            </ul>
+            <div class="centralizaNav">
+                <h2>Pedro Terra</h2>
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="burguer" id="burguer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-desktop">
+
+                <ul>
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Projects</li>
+                    <li>Knowledge</li>
+                </ul>
+            </div><!--menu desktop-->
+            <div class="menu-mobile">
+                <ul>
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Projects</li>
+                    <li>Knowledge</li>
+                </ul>
+            </div><!--menu-mobile-->
         </nav>
     </header>
 
@@ -30,7 +48,7 @@
         <div class="container">
             <h1>Front<span>End</span> Developer</h1>
             <h3>"Programming student acquiring the necessary knowledge to become a skilled professional."</h3>
-            <div class="buttonWhoIam"><a href="#">Who i am?</a></div><!--buttonWhoiam-->
+            <div class="buttonWhoIam"><a href="#">Who am i?</a></div><!--buttonWhoiam-->
         </div><!--container-->
     </section><!--banner-->
     <section class="WhoIam">
@@ -69,9 +87,13 @@
             <div class="projects-wrapper">
 
             </div><!--projects wrapper-->
-        
+
         </div><!--projects all-->
     </section><!--projects-->
+
+
+<script src="js/JQuerry.js"></script>
+<script src="functions.js"></script>
 </body>
 
 </html>

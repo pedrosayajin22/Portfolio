@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    min-height: 1px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 999px;
+}
+
+:root {
+    --Width: 100%;
+    --Max-width: 1280px;
+    --Primary-color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--Width);
+    background-color: #ffffff;
+    padding: 30px 2%;
+
+}
+
+.burguer {
+    display: none;
+}
+
+.centralizaNav {
+    display: flex;
+    align-items: baseline;
+}
+
+nav h2 {
+    font-size: 45px;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav .centralizaNav i {
+    color: gold;
+    font-size: 40px;
+    padding-left: 4px;
+}
+
+nav .centralizaNav i:hover {
+    text-shadow: 0px 0px 6px gold;
+}
+
+.menu-desktop ul li::after {
+    content: "";
+    display: flex;
+    width: 0;
+    top: 0;
+    left: 50%;
+    height: 4px;
+    position: relative;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.menu-desktop ul li {
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+
+.menu-desktop ul li:hover::after {
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    cursor: pointer;
+    background-color: gold;
+}
+
+section.banner .container {
+    height: 100vh;
+    width: var(--Width);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+section.banner .container h1 {
+    font-size: 65px;
+
+}
+
+section.banner .container span {
+    font-size: 65px;
+    color: gold;
+}
+
+section.banner .container h3 {
+    font-size: 25px;
+    padding: 0 2%;
+}
+
+section.banner .container h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60%;
+    background-color: gold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+
+
+}
+
+section.banner .container .buttonWhoIam {
+    padding-top: 40px;
+}
+
+section.banner .container .buttonWhoIam a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    width: 50px;
+    font-size: 40px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: all 1s ease;
+}
+
+section.banner .container .buttonWhoIam a:hover {
+    text-decoration: none;
+    color: gold;
+    padding: 20px;
+    width: 50px;
+    font-size: 40px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: black;
+}
+
+
+section.WhoIam {
+    padding: 50px 2%;
+    background-color: aquamarine;
+}
+
+section.tecnologies {
+    padding: 50px 2%;
+    background-color: chartreuse;
+}
+
+section.projects {
+    padding: 50px 2%;
+    background-color: crimson;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    nav ul li {
+        padding: 3px 10px;
+        font-size: 25px;
+        font-weight: 500;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+    }
+
+    nav ul li::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 0;
+        transition: all 0.4s ease;
+    }
+
+    nav ul li:hover::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: black;
+        border-radius: 2px;
+    }
+
+    section.banner .container h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    .burguer {
+        display: block;
+        font-size: 45px;
+        color: gold;
+    }
+
+    header .menu-mobile {
+        display: none;
+        position: absolute;
+        width: 100%;
+        right: 50%;
+        top: 85px;
+        transform: translateX(50%);
+        background-color: gold;
+        padding: 20px;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 0;
+        margin: 0;
+    }
+
+
+    header .menu-desktop {
+        display: none;
+    }
+
+    section.banner .container h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    section.banner .container span {
+        font-size: 45px;
+    }
+
+    section.banner .container h3 {
+        font-size: 20px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+
+}
+
+@media screen and (max-width:750px) {
+    .centralizaNav h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    section.banner .container .buttonWhoIam a {
+
+        font-size: 25px;
+
+    }
+
+    section.banner .container .buttonWhoIam a:hover {
+
+        font-size: 25px;
+
+    }
+}
+
+
+
+
+@media screen and (max-width:360px) {
+    .centralizaNav i {
+        display: none;
+    }
+
+}
